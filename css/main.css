@@ -1,0 +1,500 @@
+:root {
+  --min-Color: #20c997;
+}
+
+::selection {
+  background-color: var(--min-Color);
+}
+
+
+.min-Color {
+  background-color: #20c997;
+}
+
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.up-contenar {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  display: none;
+}
+
+.up-arrwo {
+  width: 2em;
+  height: 2em;
+  padding: 20px;
+  display: flex;
+}
+
+
+/* ------ Navbar ------ */
+.nav-item:hover .nav-link {
+  color: #20c997 !important;
+  transition: 0.5s !important;
+}
+
+.nav-link {
+  padding-right: 20px !important;
+  color: white !important;
+}
+
+
+.active {
+  color: #20c997 !important;
+}
+
+
+
+
+/* ------ Home ------ */
+
+
+.navbar{
+  background-color: #20c997 ;
+}
+
+.color-option {
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  /* lef */
+  transform: translateY(-50%);
+
+}
+
+.color-contenal{
+  border-radius: 0 10px 10px 0;
+  left: 100%;
+
+}
+
+
+.color-icon {
+  width: 30px;
+  height: 30px;
+  padding: 20px !important;
+  border-radius: 0 10px 10px 0;
+  cursor:pointer;
+}
+
+.color-contenal li {
+  width: 20px;
+  height: 20px;
+  /* background-color: #09c; */
+}
+
+.arow {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  bottom: 15;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(../imgs/_intro-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+header h1 {
+  font-size: 70px;
+}
+
+
+.btn-outline-success {
+  color: var(--min-Color);
+  border-color: var(--min-Color);
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: var(--min-Color);
+  border-color: var(--min-Color);
+}
+
+
+
+.arow i {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  color: white;
+}
+
+
+
+
+
+
+/* ------ About ------ */
+h2::before {
+  content: "ABOUT ME";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 100px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: #babbbb71;
+}
+
+
+.underlin::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: var(--min-Color);
+  left: 50%;
+  top: 120%;
+  transform: translatex(-50%);
+}
+
+
+
+#about .item1 span {
+  color: var(--min-Color);
+}
+
+
+#about .item2 li {
+  margin: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+
+#about .btn-outline-secondary {
+  color: var(--min-Color);
+  background-color: white;
+  border: solid 2px var(--min-Color) !important;
+}
+
+#about .btn-outline-secondary:hover {
+  color: #fff;
+  background-color: var(--min-Color);
+  border: solid 2px var(--min-Color) !important;
+
+}
+
+
+#about .item3 h2 {
+  font-size: 60px;
+  color: gray;
+}
+
+#about .item3 {
+  border-right: solid rgba(128, 128, 128, 0.582) 1px;
+}
+
+
+
+
+/* ------ services ------ */
+
+#services {
+  background-color: #f8f9fa;
+}
+
+
+#services h2 {
+  z-index: 1;
+}
+
+#services h2::before {
+  content: "services";
+  position: absolute;
+  text-transform: uppercase;
+  left: 50%;
+  top: 50%;
+  font-size: 100px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: #babbbb71;
+}
+
+
+#services .underlin::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: var(--min-Color);
+  left: 50%;
+  top: 120%;
+  transform: translatex(-50%);
+}
+
+
+
+.serv-icone {
+
+  display: flex;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-right: 20px;
+  width: 1.5em;
+  width: 1.5em;
+}
+
+.serv-icone i {
+  color: var(--min-Color);
+}
+
+
+
+
+
+/* ------ Resume ------ */
+
+#resume h2::before {
+  content: "summary";
+  position: absolute;
+  text-transform: uppercase;
+  left: 50%;
+  top: 50%;
+  font-size: 100px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: #babbbb71;
+}
+
+
+.progress-bar {
+  background-color: var(--min-Color);
+}
+
+
+
+#resume button::after {
+  content: "\f019";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  font-family: FontAwesome;
+}
+
+
+#resume .btn-outline-secondary {
+  color: var(--min-Color);
+  background-color: white;
+  border: solid 2px var(--min-Color) !important;
+}
+
+#resume .btn-outline-secondary:hover {
+  color: #fff;
+  background-color: var(--min-Color);
+  border: solid 2px var(--min-Color) !important;
+
+}
+
+
+
+
+
+/* ------ Animation home page ------ */
+
+@keyframes move {
+
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+
+}
+
+
+
+
+/* ------ Media Query ------ */
+
+@media screen and (max-width: 990px) {
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .nav-item {
+    padding: 10px;
+    border-bottom: solid rgba(160, 155, 155, 0.301) 1px;
+  }
+
+  #about .item3 {
+    border-right: none;
+  }
+
+
+  #about .it1 {
+    border-right: solid rgba(128, 128, 128, 0.582) 1px;
+    border-bottom: solid rgba(128, 128, 128, 0.582) 1px;
+  }
+
+  #about .it2 {
+    border-left: solid rgba(128, 128, 128, 0.582) 1px;
+    border-bottom: solid rgba(128, 128, 128, 0.582) 1px;
+  }
+
+  #about .it3 {
+    border-right: solid rgba(128, 128, 128, 0.582) 1px;
+    border-top: solid rgba(128, 128, 128, 0.582) 1px;
+  }
+
+  #about .it4 {
+    border-top: solid rgba(128, 128, 128, 0.582) 1px;
+    border-left: solid rgba(128, 128, 128, 0.582) 1px;
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 1020px) and (min-width: 720px) {
+
+  #about h2::before {
+    content: "ABOUT ME";
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 90px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+
+  #services h2::before {
+    content: "services";
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 90px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+  #resume h2::before {
+    content: "summary";
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 90px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+}
+
+@media screen and (max-width: 719px) and (min-width: 550px) {
+
+  #about h2::before {
+    content: "ABOUT ME";
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 80px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+  #services h2::before {
+    content: "services";
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 80px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+  #resume h2::before {
+    content: "summary";
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 90px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+}
+
+@media screen and (max-width: 549px) {
+
+  #about h2::before {
+    content: "ABOUT ME";
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+
+  #services h2::before {
+    content: "services";
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+  #resume h2::before {
+    content: "summary";
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    font-size: 80px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: #babbbb71;
+  }
+
+}
